@@ -1,0 +1,32 @@
+#
+#
+This file contains the output of "sessionInfo()". I.e. the exact conditions under which this script was originally working. If you downloaded the code and it isn't working for you, you might fine clues as to why in this text file.
+#
+#
+R version 4.0.2 (2020-06-22)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 19042)
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=Norwegian Bokmål_Norway.1252  LC_CTYPE=Norwegian Bokmål_Norway.1252   
+[3] LC_MONETARY=Norwegian Bokmål_Norway.1252 LC_NUMERIC=C                            
+[5] LC_TIME=Norwegian Bokmål_Norway.1252    
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] boot_1.3-25   MuMIn_1.43.17 ROCR_1.0-11   GGally_2.1.1  cowplot_1.1.1 ggplot2_3.3.2 dplyr_1.0.4  
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_1.0.5         plyr_1.8.6         RColorBrewer_1.1-2 pillar_1.4.6       compiler_4.0.2    
+ [6] tools_4.0.2        digest_0.6.25      lifecycle_0.2.0    tibble_3.0.3       gtable_0.3.0      
+[11] nlme_3.1-148       lattice_0.20-41    mgcv_1.8-31        pkgconfig_2.0.3    rlang_0.4.10      
+[16] Matrix_1.2-18      DBI_1.1.1          cli_2.0.2          rstudioapi_0.11    xfun_0.21         
+[21] withr_2.4.1        generics_0.0.2     vctrs_0.3.6        stats4_4.0.2       grid_4.0.2        
+[26] tidyselect_1.1.0   reshape_0.8.8      glue_1.4.1         R6_2.4.1           fansi_0.4.1       
+[31] purrr_0.3.4        farver_2.0.3       magrittr_1.5       scales_1.1.1       ellipsis_0.3.1    
+[36] splines_4.0.2      assertthat_0.2.1   colorspace_1.4-1   labeling_0.3       utf8_1.1.4        
+[41] tinytex_0.29       munsell_0.5.0      crayon_1.3.4      

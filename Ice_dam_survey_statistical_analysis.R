@@ -2,14 +2,16 @@
 # Basic GLM to clarify effect of river parameters on ice dam formation probability#
 ###################################################################################
 
+#Code made with R version 4.0.2
+
 #Libraries
-library(dplyr) #For data wrangling
-library(ggplot2) #For plotting data
-library(cowplot) #For placing plots in a grid
-library(GGally) #For making correlation heatmaps
-library(ROCR) #For making the ROC curve
-library(MuMIn) #For model subsetting and model selection
-library(boot) #For cross-validation
+library(dplyr) #For data wrangling - Package version 1.0.4
+library(ggplot2) #For plotting data - Package version 3.3.2
+library(cowplot) #For placing plots in a grid - Package version 1.1.1
+library(GGally) #For making correlation heatmaps - Package version 2.1.1
+library(ROCR) #For making the ROC curve - Package version 1.0.11
+library(MuMIn) #For model subsetting and model selection - Package version 1.43.17
+library(boot) #For cross-validation - Package version - Package version 1.3.25
 
 # Setwd
 setwd("A:/PhD/Analysis/Ice_dam_survey")
