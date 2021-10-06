@@ -35,7 +35,7 @@ data <- select(data, -c(name,
                         Dam_Sinuosity140,
                         Dam_SinuosityCustom))
 #Rename poorly named column
-data <- rename(data, "Distance"="Ã¯..dist")
+data <- rename(data, "Distance"="ï..dist")
 
 #Omit rows with NA entries
 data <-na.omit(data)
@@ -138,7 +138,7 @@ graph_all_vs_width
 
 graph_all_vs_distance <- lapply(names(continuous),
                              function(x)
-                               ggplot(data, aes(get(x), y=distance))+
+                               ggplot(data, aes(get(x), y=Distance))+
                                geom_point(aes(color=Type),
                                           size=0.5)+
                                stat_smooth(method='lm',
@@ -189,7 +189,7 @@ best_model <- glm_3
 data_best <- data_3
 
 #Assess performance of model using a confusion matrix
-predict <- predict(glm_1,data_best, type='response')
+predict <- predict(best_model,data_best, type='response')
 table_mat <- table(data_best$Type, predict>0.5)
 table_mat
 accuracy_Test <- sum(diag(table_mat)) / sum(table_mat)
@@ -218,6 +218,9 @@ f1
 ROCRpred <- prediction(predict, data$Type)
 ROCRperf <- performance(ROCRpred, 'tpr', 'fpr')
 plot(ROCRperf, colorize = TRUE, text.adj = c(-0.2, 1.7))
+auc.perf = performance(ROCRpred, measure = "auc")
+print(auc.perf@y.values)
+
 ROCRperf <- performance(ROCRpred, 'prec', 'rec')
 plot(ROCRperf, colorize = TRUE, text.adj = c(-0.2, 1.7))
 
